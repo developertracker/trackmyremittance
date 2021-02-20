@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="">
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+<title>ICICI Track My Remittance</title>
+<link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+<div class="header">
+	<div class="title"></div>
+    <div class="brand"><img src="images/logo.png" alt="icici logo" /></div>
+</div>
+<div class="mainContent">
+	<div class="content">
+        <div class="leftSide"><img src="images/track-remittance-figure.png" alt="track my loan" /></div>
+        <div class="rightSide">
+            <form action="" method="post" name="searchApplication" class="searchForm">
+                <div class="form-control">
+                    <label>Beneficiary Account Number</label>
+                    <input type="text" name="appNumber" required onKeyPress="return isNumber()" />
+                </div>
+                <div class="form-control">
+                    <label>Currency</label>
+                    <div class="custom-select">
+                        <select>
+                          <option value="0">- Select -</option>
+                          <option value="1">FCC</option>
+                          <option value="2">WIRE</option>
+                        </select>
+                      </div>
+                </div>
+                 <div class="form-control">
+                    <label>Amount</label>
+                    <input type="text" name="mobileNumber" placeholder="********" required  onKeyPress="return isNumber()"  />
+                </div>
+                <div class="form-control">
+                    <div class="note">Please enter the currency and amount
+                    details of the transaction that you
+                    need to track.</div>
+                </div>
+                <div class="form-control nobottom">
+                    <input type="submit" name="send" value="LOGIN" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="js/main.js"></script>
+<script>
+	function isNumber(evt) {
+		evt = (evt) ? evt : window.event;
+		var charCode = (evt.which) ? evt.which : evt.keyCode;
+		if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+			return false;
+		}
+		return true;
+	}
+	
+</script>
+</body>
+</html>
