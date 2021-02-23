@@ -21,21 +21,23 @@
             <form action="" method="post" name="searchApplication" class="searchForm">
                 <div class="form-control">
                     <label>Beneficiary Account Number</label>
-                    <input type="text" name="appNumber" required onKeyPress="return isNumber()" />
+                    <input type="text" name="appNumber" maxlength="16" required onKeyPress="return isNumber()" />
                 </div>
                 <div class="form-control">
                     <label>Currency</label>
                     <div class="custom-select">
                         <select>
-                          <option value="0">- Select -</option>
-                          <option value="1">FCC</option>
-                          <option value="2">WIRE</option>
+                            <option value="0">- Select -</option>
+                            <option value="INR">INR</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
                         </select>
                       </div>
                 </div>
                  <div class="form-control">
                     <label>Amount</label>
-                    <input type="text" name="mobileNumber" placeholder="********" required  onKeyPress="return isNumber()"  />
+                    <input type="text" name="mobileNumber" maxlength="10" placeholder="********" required  onKeyPress="return isNumber()"  />
                 </div>
                 <div class="form-control">
                     <div class="note">Please enter the currency and amount
