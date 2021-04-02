@@ -106,13 +106,14 @@ body{
 }
 .searchForm input[type=submit]{
 	background:#b02a30;
-	border:5px solid #ffffff;
+	border:2px solid #ffffff;
 	border-radius:50px;
 	height:70px;
 	width:200px;
 	font-size:24px;
 	color:#ffffff;
 	padding-left:0;
+	cursor: pointer;
 }
 
 .searchForm .otpEntry{
@@ -405,11 +406,13 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top:30px;
+	font-family: 'Zurich BT';
+	font-size: 23px;
 }
 .contacdetails a{
 	color: #231f20;
 	font-size: 18px;
+	outline: none;
 }
 .icon{
 	display: flex;
@@ -418,6 +421,27 @@ body{
 }
 .icon img{
 	padding-right: 10px;
+}
+
+.transactionDetails {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 2%;
+}
+
+.notice {
+	color: #0b4b80;
+	font-family:'zurichcondensed';
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.nav-buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 }
 /*================== Start Select CSS ======================*/
 
@@ -997,6 +1021,16 @@ body{
 	.heading{
 		padding: 10px 0;
 	}
+
+	.viewTransation img{
+		width: 200px;
+	}
+
+	.table_body_wrapper{
+		margin-top: -25px;
+		padding-top: 22px;
+	}
+	
 }
 @media screen and (max-width:579px) {
 	.banner{
@@ -1004,12 +1038,12 @@ body{
 		background-size:100% 100%;
 	}
 	.bannerText{
-		font-size: 20px;
-		text-align: center;
+		font-size: 18px;
+		text-align: left;
 		font-weight: bold;
 		padding-bottom: 20px;
-		padding-left: 0;
-		padding-top:10px;
+		padding-left: 10px;
+		padding-top:20px;
 	}
 	.stepsDetails {
 		width: 280px;
@@ -1025,10 +1059,15 @@ body{
 		margin-left: 0;
 	}
 	.contacdetails{
-		margin-top:20px;
+		margin-top:10px;
+		flex-direction: column;
+		font-size: 16px;
 	}
 	.contacdetails a{
 		font-size: 12px;
+	}
+	.contacdetails .icon {
+		margin-bottom: 15px;
 	}
 	.icon img{
 		width: 20px;
@@ -1055,11 +1094,31 @@ body{
 	.heading{
 		padding: 10px 0;
 		border-left: 0;
+		font-size: 10px;
 	}
 	.table_body_wrapper{
 		border-radius: 0 0 15px 15px;
 		margin-top: -15px;
 		padding-top: 10px;
 		border-width: 2px;
+	}
+
+	.remitDetails {
+		margin-bottom: 10px;
+	}
+
+	.transactionDetails {
+		flex-direction: column;
+	}
+	.notice {
+		font-size: 12px;
+	}
+
+	.nav-buttons {
+		margin-top: 10px;
+	}
+
+	.nav-buttons img{
+		width: 70px;
 	}
 }
