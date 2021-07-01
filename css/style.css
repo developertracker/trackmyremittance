@@ -393,7 +393,6 @@ body{
 	font-size: 20px;
 	font-family: 'Zurich BT';
 	text-align: center;
-	margin: 50px 0;
 }
 .note{
 	color: #ffffff;
@@ -408,6 +407,9 @@ body{
 	justify-content: center;
 	font-family: 'Zurich BT';
 	font-size: 23px;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	padding: 8px 20px;
 }
 .contacdetails a{
 	color: #231f20;
@@ -422,6 +424,9 @@ body{
 .icon img{
 	padding-right: 10px;
 }
+.icon:last-child {
+	margin-right: 0;
+}
 
 .transactionDetails {
 	display: flex;
@@ -435,7 +440,7 @@ body{
 	font-family:'zurichcondensed';
 	font-size: 14px;
 	text-align: center;
-	padding-bottom: 10px;
+	padding: 0 10px 10px 10px;
 }
 
 .nav-buttons {
@@ -443,6 +448,8 @@ body{
 	justify-content: center;
 	margin-top: 20px;
 }
+
+
 /*================== Start Select CSS ======================*/
 
 /* The container must be positioned relative: */
@@ -775,12 +782,15 @@ body{
 	.loanDetails,.remitDetails{
 		font-size: 16px;
 	}
-	.remitDetails{
-		margin: 30px 0;
+
+	.contacdetails {
+		font-size: 18px;
 	}
+
 	.contacdetails a{
 		font-size: 14px;
 	}
+	
 	.table_head{
 		font-size: 18px;
 	}
@@ -1003,9 +1013,7 @@ body{
 	.remitDetails{
 		font-size: 12px;
 	}
-	.remitDetails{
-		margin: 20px 0;
-	}
+
 	.table_head{
 		font-size: 14px;
 	}
@@ -1031,6 +1039,9 @@ body{
 		padding-top: 22px;
 	}
 	
+	.remitDetails {
+		margin: 10px 0;
+	}
 }
 @media screen and (max-width:579px) {
 	.banner{
@@ -1059,7 +1070,7 @@ body{
 		margin-left: 0;
 	}
 	.contacdetails{
-		margin-top:10px;
+		margin:5px 0 10px 0;
 		flex-direction: column;
 		font-size: 16px;
 	}
@@ -1068,6 +1079,10 @@ body{
 	}
 	.contacdetails .icon {
 		margin-bottom: 15px;
+		margin-right: 0;
+	}
+	.contacdetails .icon:last-child {
+		margin-bottom: 0;
 	}
 	.icon img{
 		width: 20px;
@@ -1103,9 +1118,7 @@ body{
 		border-width: 2px;
 	}
 
-	.remitDetails {
-		margin-bottom: 10px;
-	}
+
 
 	.transactionDetails {
 		flex-direction: column;
@@ -1120,5 +1133,9 @@ body{
 
 	.nav-buttons img{
 		width: 70px;
+	}
+
+	.no-break--xs br{
+		display: none;
 	}
 }
