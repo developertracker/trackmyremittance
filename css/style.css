@@ -92,6 +92,7 @@ body{
 	font-size:24px;
 	padding-left:30px;
 	padding-bottom:10px;
+	letter-spacing: 1px;
 }
 .searchForm input{
 	background:#ffffff;
@@ -121,8 +122,9 @@ body{
    background:#ffffff;
 	border:5px solid #b02a30;
 	border-radius:50px;
-	height:70px;
-	width:430px;
+	height:80px;
+	width:440px;
+	box-sizing: border-box;
 }
 .searchForm .otpEntry input{
     border: 0;
@@ -133,26 +135,30 @@ body{
     width: 35px;
     text-align:center;
     padding :0;
-    margin-left:10px;
+    margin-left:15px;
 	height:auto;
 	font-family:'zurichcondensed';
 	color:#b02a30;
 	margin-top:20px;
 }
 .resendOTP{
-	display:flex;
+	display:none;
 	align-items:center;
-	justify-content: space-between;
+	justify-content: center;
 }
+.resendOTP.show{
+	display:flex;
+}
+
 .resendOTP label{
-	padding:0;
+	padding:0 30px 0 0;
 	font-size:16px;
+
 }
-.resendOTP label.btnResentOTP{
-	border-bottom:2px solid #ffffff;
-	font-size:24px;
-	padding-bottom:0;
+.resendOTP label:last-child{
+	padding-right: 0;
 }
+
 .searchForm .otpEntry input::-webkit-input-placeholder { /* Edge */
   color:#b02a30;
 }
@@ -165,6 +171,10 @@ body{
 
 .searchForm .otpEntry input::placeholder {
   color:#b02a30;
+}
+
+.otp-input, .submitbtn {
+	display: none;
 }
 
 /*=======================Inner page============================*/
@@ -688,9 +698,7 @@ body{
 		margin-top:15px;
 		font-size:20px;
 	}
-	.resendOTP label.btnResentOTP{
-		font-size:20px;
-	}
+
 	.innerHeader{
 		height:95px;
 	}
@@ -734,19 +742,20 @@ body{
 		height:50px;
 	}
 	.searchForm input[type=submit]{
-		width:177px;
-		font-size:16px;
-		height:60px;
+		width: 130px;
+		font-size: 16px;
+		height: 44px;
+		border-width: 3px;
 	}
 	.leftSide img{
 		max-width:402px;
 	}
 	.searchForm .otpEntry{
-		width:285px;
+		width:256px;
 		height:50px;
 	}
 	.searchForm .otpEntry input{
-		margin-top:15px;
+		margin-top:10px;
 		font-size:16px;
 		width:25px;
 		border-bottom: 2px solid #9f9f9f
@@ -1041,6 +1050,14 @@ body{
 	
 	.remitDetails {
 		margin: 10px 0;
+	}
+
+	.searchForm .otpEntry {
+		width: 100%;
+	}
+
+	.searchForm .otpEntry input {
+		margin-left: 8px;
 	}
 }
 @media screen and (max-width:579px) {

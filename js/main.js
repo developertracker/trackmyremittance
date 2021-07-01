@@ -11,6 +11,21 @@ $(document).ready(function(){
 			$(this).next().focus();
 		});
 	});
+
+  $('#mobile').keyup(function (e) {
+		if($(this).val().length === 10){
+			$('.otpbox').show();
+			$('.otpbtn').click(function(){
+				$('.otp-input').show();
+				$(this).hide();
+				$('.submitbtn').show();
+        $('.resendOTP').addClass('show');
+			})
+		}
+		else{
+			$('.otpbox').hide();
+		}
+	})
 });
 $(window).resize(function(){
 	manageHeight();
