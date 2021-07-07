@@ -153,10 +153,19 @@ body{
 .resendOTP label{
 	padding:0 30px 0 0;
 	font-size:16px;
-
 }
 .resendOTP label:last-child{
 	padding-right: 0;
+}
+
+.btnResentOTP a{
+	border-bottom: 1px solid;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btnResentOTP a:hover{
+	color: #b02a30;
 }
 
 .searchForm .otpEntry input::-webkit-input-placeholder { /* Edge */
@@ -322,6 +331,7 @@ body{
 	height:58px;
 	text-align:center;
 	color:#ffffff;
+	text-transform: capitalize;
 }
 .stepStatus{
 	font-size:12px;
@@ -402,7 +412,7 @@ body{
 	color: #231f20;
 	font-size: 20px;
 	font-family: 'Zurich BT';
-	text-align: center;
+	text-align: left;
 }
 .note{
 	color: #ffffff;
@@ -416,14 +426,14 @@ body{
 	align-items: center;
 	justify-content: center;
 	font-family: 'Zurich BT';
-	font-size: 23px;
+	font-size: 24px;
 	border: 1px solid #cccccc;
 	border-radius: 10px;
 	padding: 8px 20px;
+	margin: 10px 0;
 }
 .contacdetails a{
 	color: #231f20;
-	font-size: 18px;
 	outline: none;
 }
 .icon{
@@ -459,7 +469,9 @@ body{
 	margin-top: 20px;
 }
 
-
+.viewTransation img{
+	width: 200px;
+}
 /*================== Start Select CSS ======================*/
 
 /* The container must be positioned relative: */
@@ -643,7 +655,7 @@ body{
 }
 
   .btn img{
-	  width: 60px;
+	  width: 100px;
 	  display: block;
 	  margin: 0 auto;
   }
@@ -724,7 +736,7 @@ body{
 		font-size:20px;
 	}
 	.header .brand img{
-		max-width:127px;
+		max-width:200px;
 	}
 	.bannerText {
 		font-size: 40px;
@@ -757,14 +769,23 @@ body{
 	.searchForm .otpEntry input{
 		margin-top:10px;
 		font-size:16px;
-		width:25px;
-		border-bottom: 2px solid #9f9f9f
+		width:20px;
+		border-bottom: 2px solid #9f9f9f;
+		margin-left: 10px;
+	}
+
+	.searchForm .otpEntry input:first-child {
+		margin-left: 0;
+	}
+
+	.resendOTP label {
+		padding-bottom: 0;
 	}
 	.innerHeader{
 		height:78px;
 	}
 	.loanBrand img{
-		max-width:127px;
+		max-width: 200px;
 	}
 	
 	.banner{
@@ -795,10 +816,6 @@ body{
 	.contacdetails {
 		font-size: 18px;
 	}
-
-	.contacdetails a{
-		font-size: 14px;
-	}
 	
 	.table_head{
 		font-size: 18px;
@@ -807,7 +824,7 @@ body{
 		font-size: 16px;
 	}
 	.btn img{
-		width: 40px;
+		width: 70px;
 	}
 	.body_text{
 		min-height: 28px;
@@ -834,9 +851,23 @@ body{
 	.leftSide img{
 		height: auto;
 	}
+
+	.viewTransation img {
+		width: 180px;
+	}
 	
+	.header .brand img, .loanBrand img{
+		max-width:150px;
+	}
+
+	.innerHeader {
+		height: 65px;
+	}
 }
 @media screen and (max-width: 768px) {
+	.header .brand img, .loanBrand img {
+		width: 125px;
+	}
 	.mainContent{
 		background: url(../images/page-bg.jpg) 0px 0;
 		background-size: cover;
@@ -1021,6 +1052,7 @@ body{
 	}
 	.remitDetails{
 		font-size: 12px;
+		text-align: center;
 	}
 
 	.table_head{
@@ -1059,6 +1091,11 @@ body{
 	.searchForm .otpEntry input {
 		margin-left: 8px;
 	}
+
+	.contacdetails {
+		font-size: 14px;
+		padding: 8px 15px;
+	}
 }
 @media screen and (max-width:579px) {
 	.banner{
@@ -1087,13 +1124,11 @@ body{
 		margin-left: 0;
 	}
 	.contacdetails{
-		margin:5px 0 10px 0;
+		margin:8px 0 10px 0;
 		flex-direction: column;
-		font-size: 16px;
+		font-size: 14px;
 	}
-	.contacdetails a{
-		font-size: 12px;
-	}
+
 	.contacdetails .icon {
 		margin-bottom: 15px;
 		margin-right: 0;
