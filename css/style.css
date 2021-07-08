@@ -188,9 +188,8 @@ body{
 
 /*=======================Inner page============================*/
 .wrapper{
-	max-width:1300px;
+	max-width: 100%;
 	margin:0 auto;
-	border:1px solid;
 }
 .innerHeader{
 	height:95px;
@@ -208,8 +207,11 @@ body{
 .banner{
 	background:no-repeat;
 	height:441px;
-	max-width:1300px;
+	max-width: 100%;
+	background-size: cover;
+
 }
+
 .stepA{
 	background-image:url(../images/slide3-banner.jpg);
 }
@@ -467,11 +469,16 @@ body{
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
+	background: #fff;
+    position: sticky;
+    bottom: 0;
+    padding-top: 10px;
 }
 
 .viewTransation img{
 	width: 200px;
 }
+
 /*================== Start Select CSS ======================*/
 
 /* The container must be positioned relative: */
@@ -558,14 +565,18 @@ body{
 	border-radius: 30px;
   }
   .table_wrapper{
-	margin: 50px auto;
+	margin: 50px auto 0;
   }
+
   .table {
 	  width: 90%;
 	  margin: 0 auto;
 	  border-radius: 10px;
 	  border: 0;
   }
+  
+
+
   .table_head{
 	  position: relative;
 	  z-index: 1;
@@ -643,7 +654,7 @@ body{
 	align-items: center;
 	display: flex;
     justify-content: center;
-	min-height: 42px;
+	min-height: 70px;
 }
 .body_text:nth-child(3) {
 	flex: 280px;
@@ -728,7 +739,7 @@ body{
 		top:15px;
 	}
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {	
 	.header{
 		height:60px;
 	}
@@ -827,7 +838,7 @@ body{
 		width: 70px;
 	}
 	.body_text{
-		min-height: 28px;
+		min-height: 48px;
 	}
 
 }
@@ -1140,7 +1151,7 @@ body{
 		width: 20px;
 	}
 	.table_wrapper{
-		margin: 20px 0;
+		margin: 20px 0 0 0;
 	}
 	.table{
 		width: 98%;
