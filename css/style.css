@@ -1,17 +1,4 @@
-@font-face {
-	font-family: 'Zurich BT';
-	font-style: normal;
-	font-weight: normal;
-	src: url('../fonts/ZURCHN.TTF') format('ttf'),
-		 url('../fonts/ZURCHN.woff') format('woff');
-}
-@font-face {
-	font-family: 'zurichcondensed';
-	font-style: normal;
-	font-weight: normal;
-	src: url('../fonts/zurichbt-romancondensed-webfont.woff') format('woff'),
-		 url('../fonts/zurichbt-romancondensed-webfont.woff2') format('woff2');
-}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
 *{
 	margin:0;
@@ -20,6 +7,7 @@
 body{
 	margin:0;
 	padding:0;
+	font-family: 'Mulish', sans-serif;
 }
 .header{
 	background:url(../images/top-bar.jpg) no-repeat;
@@ -33,9 +21,8 @@ body{
 
 .header .title{
 	color:#ffffff;
-	font-family: 'Zurich BT';
 	font-size:30px;
-	font-weight:bold;
+	font-weight:400;
 	font-style:italic;
 	padding-left:50px;
 }
@@ -65,22 +52,22 @@ body{
 	max-width:70%;
 }
 .rightSide{
-	 text-align:center;
-	 background:#f48220;
-	 position: relative;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-	 display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;  	
+	text-align:center;
+	background:#f48220;
+	position: relative;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;  	
 	align-items:center;
 	justify-content:center;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 }
 .searchForm .form-control{
 	margin-bottom:30px;
@@ -101,7 +88,7 @@ body{
 	height:70px;
 	width:400px;
 	font-size:24px;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	padding-left:30px;
 	outline:none;
 }
@@ -137,7 +124,7 @@ body{
     padding :0;
     margin-left:15px;
 	height:auto;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	color:#b02a30;
 	margin-top:20px;
 }
@@ -248,7 +235,7 @@ body{
 .bannerText{
 	color:#183e6c;
 	font-size:60px;
-	font-family:'zurichcondensed';
+	font-weight: 700;
 	padding-left:20px;
 	padding-top:20px;
 }
@@ -301,7 +288,7 @@ body{
 	align-items:center;
 	justify-content:center;
 	font-size:55px;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	color:#a8a69c;
 }
 .steps.inprocess .stepNo span{
@@ -324,7 +311,7 @@ body{
 }
 
 .stepName{
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	font-size:16px;
 	display:flex;
 	align-items:center;
@@ -338,7 +325,7 @@ body{
 .stepStatus{
 	font-size:12px;
 	color:#0a4c80;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -362,7 +349,7 @@ body{
 }
 .loanDetails{
 	text-align:center;
-	font-family: 'Zurich BT';
+	font-weight: 400;
 	font-size:20px;
 	color:#231f20;
 	margin-top:40px;
@@ -396,8 +383,7 @@ body{
 	margin-right:0;	
 }
 .levelName{
-	font-family: 'Zurich BT';
-	font-weight:bold;
+	font-weight:400;
 	font-style:italic;
 	font-size:16px;
 	color:#616262;
@@ -405,7 +391,7 @@ body{
 .exName{
 	color:#808184;
 	font-size:11px;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 }
 .rs{
 	max-width:6px;
@@ -413,7 +399,7 @@ body{
 .remitDetails{
 	color: #231f20;
 	font-size: 20px;
-	font-family: 'Zurich BT';
+	font-weight: 400;
 	text-align: left;
 }
 .note{
@@ -427,8 +413,8 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Zurich BT';
-	font-size: 24px;
+	font-weight: 400;
+	font-size: 20px;
 	border: 1px solid #cccccc;
 	border-radius: 10px;
 	padding: 8px 20px;
@@ -459,7 +445,7 @@ body{
 
 .notice {
 	color: #0b4b80;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	font-size: 14px;
 	text-align: center;
 	padding: 0 10px 10px 10px;
@@ -484,7 +470,7 @@ body{
 /* The container must be positioned relative: */
 .custom-select {
 	position: relative;
-	font-family:'zurichcondensed';
+	font-weight: 400;
   }
   
   .custom-select select {
@@ -581,7 +567,7 @@ body{
 	  position: relative;
 	  z-index: 1;
 	  display: flex;
-	  font-family:'zurichcondensed';
+	  font-weight: 400;
 	  color: #6b6b6b;
 	  font-size: 24px;
 	  text-align: center;
@@ -599,7 +585,7 @@ body{
   }
   .table_body{
 	border-top: 0;
-	font-family:'zurichcondensed';
+	font-weight: 400;
 	color: #6b6b6b;
 	font-size: 24px;
 	display: flex;
@@ -756,13 +742,15 @@ body{
 		line-height: normal;
 	}
 	.searchForm label{
-		font-size:16px;
+		font-size:14px;
 		padding-bottom:5px;
+		padding-left: 20px;
 	}
 	.searchForm input{
-		font-size:16px;
+		font-size:14px;
 		width:256px;
 		height:50px;
+		padding-left: 20px;
 	}
 	.searchForm input[type=submit]{
 		width: 130px;
@@ -825,7 +813,7 @@ body{
 	}
 
 	.contacdetails {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 	.table_head{
@@ -840,7 +828,9 @@ body{
 	.body_text{
 		min-height: 48px;
 	}
-
+	.notice {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-height: 725px) {
@@ -945,7 +935,7 @@ body{
 	.bannerText{
 		font-size: 24px;
 		text-align: center;
-		font-weight: bold;
+		font-weight: 400;
 		padding-bottom: 20px;
 		padding-left: 0;
 		padding-top: 20px;
@@ -1160,7 +1150,7 @@ body{
 		font-size: 12px;		
 	}
 	.table_body{
-		font-size: 10px;
+		font-size: 9px;
 	}
 	.btn img{
 		width: 40px;
