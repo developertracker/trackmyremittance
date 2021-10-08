@@ -6,30 +6,33 @@ function manageHeight(){
 }
 $(document).ready(function(){
 	manageHeight();
+
+
+
 	$('.otpEntry .input-control').each(function(){
 		$(this).keypress(function(){
 			$(this).next().focus();
 		});
 	});
+  
 
-  $('#mobile').keyup(function (e) {
-		if($(this).val().length === 10){
-			$('.otpbox').show();
-			$('.otpbtn').click(function(){
-				$('.otp-input').show();
-				$(this).hide();
-				$('.submitbtn').show();
-        $('.resendOTP').addClass('show');
-			})
-		}
-		else{
-			$('.otpbox').hide();
-		}
-	})
+  $('.otpbtn').click(function(){
+    if($('#mobile').val().length === 10){
+      $('.otpbox').show();
+      $('.otp-input').show();
+      $(this).hide();
+      $('.submitbtn').show();
+      $('.resendOTP').addClass('show');
+    }
+    else{
+      $('.otpbox').hide();
+    }
+  })
 });
 $(window).resize(function(){
 	manageHeight();
 });
+
 
 function validateForm(e) {
   let isAccount = document.searchForm.accountNumber.value;
@@ -54,7 +57,6 @@ function validateOTP() {
     }
   }
 }
-
 
 /*=================================================
 ===================Select JS ======================*/
