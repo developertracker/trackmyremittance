@@ -69,6 +69,7 @@ body{
 	justify-content:center;
 	font-weight: 400;
 }
+
 .searchForm .form-control{
 	margin-bottom:30px;
 }
@@ -112,6 +113,7 @@ body{
 	height:80px;
 	width:440px;
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 .searchForm .otpEntry input{
     border: 0;
@@ -779,6 +781,7 @@ body{
 
 	.resendOTP label {
 		padding-bottom: 0;
+		padding-left: 0;
 	}
 	.innerHeader{
 		height:78px;

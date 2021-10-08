@@ -31,6 +31,30 @@ $(window).resize(function(){
 	manageHeight();
 });
 
+function validateForm(e) {
+  let isAccount = document.searchForm.accountNumber.value;
+  let isMobile = document.searchForm.mobileNumber.value;
+
+  if (isAccount == "") {
+    alert("Please enter the Beneficiary Account Number where the funds will be credited to proceed.");
+    return false;
+  }
+  if (isMobile == "" || isMobile.length < 10) {
+    alert("Please enter the Mobile Number registered with the Bank for the mentioned Beneficiary Account Number to proceed.");
+    return false;
+  }
+}
+
+function validateOTP() {
+  let isOtp = document.querySelectorAll('.otpEntry .input-control'); 
+  for(const props of isOtp) {
+    if (props.value == "") {
+      alert("Please enter the OTP sent on your Mobile Number to proceed.");
+      return false;
+    }
+  }
+}
+
 
 /*=================================================
 ===================Select JS ======================*/

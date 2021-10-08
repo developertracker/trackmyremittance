@@ -18,38 +18,32 @@
 	<div class="content">
         <div class="leftSide"><img src="images/track-remittance-figure.png" alt="track my loan" /></div>
         <div class="rightSide">
-            <form action="" method="post" name="searchApplication" class="searchForm">
+            <form action="" method="post" name="searchForm" class="searchForm">
                 <div class="form-control">
                     <label>Beneficiary Account Number<br>where funds will be credited</label>
-                    <input type="text" id="accountNumber" name="accountNumber" maxlength="16" required onKeyPress="return isNumber()" />
+                    <input type="text" id="accountNumber" name="accountNumber" maxlength="16"  onKeyPress="return isNumber()" />
                 </div>
                  <div class="form-control">
                     <label>Beneficiary Mobile Number</label>
-                    <input type="text" id="mobile" name="mobileNumber" maxlength="10" required  onKeyPress="return isNumber()"  />
+                    <input type="text" id="mobile" name="mobileNumber" maxlength="10"   onKeyPress="return isNumber()"  />
                 </div>
                 <div class="form-control otp-input">
                     <label>Enter OTP</label>
                     <div class="otpEntry">
-                       <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
-                       oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
-                       <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
-                       oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
-                       <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
-                       oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
-                       <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
-                       oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
-                       <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
-                       oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
-                       <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
-                       oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                       <input type="password" name="otp" class="input-control" placeholder="*" maxlength="1" required onKeyPress="return isNumber()" />
+                       <input type="password" name="otp" class="input-control" placeholder="*" maxlength="1" onKeyPress="return isNumber()" />
+                       <input type="password" name="otp" class="input-control" placeholder="*" maxlength="1" onKeyPress="return isNumber()" />
+                       <input type="password" name="otp" class="input-control" placeholder="*" maxlength="1" onKeyPress="return isNumber()" />
+                       <input type="password" name="otp" class="input-control" placeholder="*" maxlength="1" onKeyPress="return isNumber()" />
+                       <input type="password" name="otp" class="input-control" placeholder="*" maxlength="1" onKeyPress="return isNumber()" />
                    </div> 
 
                </div>
                 <div class="form-control loginbtn otpbtn">
-                    <input type="submit" name="send" value="SEND OTP" />
+                    <input type="submit" name="send" value="SEND OTP" onclick="return validateForm()" />
                 </div>
                 <div class="form-control loginbtn submitbtn">
-                    <input type="submit" id="submit" name="Login" value="LOGIN" />
+                    <input type="submit" id="submit" name="Login" value="LOGIN" onclick="return validateOTP()" />
                 </div>
                 <div class="resendOTP">
                     <label>Didn't recieve OTP?</label>
@@ -59,7 +53,7 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 <script src="js/main.js"></script>
 <script>
 	function isNumber(evt) {
@@ -70,7 +64,6 @@
 		}
 		return true;
 	}
-	
 </script>
 </body>
 </html>
