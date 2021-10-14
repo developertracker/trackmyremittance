@@ -553,17 +553,62 @@ body{
 	border-radius: 30px;
   }
   .table_wrapper{
-	margin: 50px auto 0;
+	margin: 50px auto 100px;
+	width: 90%;
   }
 
-  .table {
-	  width: 90%;
+  .table_wrapper .table {
 	  margin: 0 auto;
 	  border-radius: 10px;
 	  border: 0;
+	  display: none;
   }
-  
 
+  .table_wrapper .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: transparent
+  }
+
+  .table_wrapper .bx-controls {
+    background: #fff;
+    position: fixed;
+	width: 100%;
+	left: 0;
+    bottom: 0;
+    padding-top: 10px;
+  }
+
+  .table_wrapper .bx-controls-direction {
+	  display: flex;
+	  justify-content: center;
+
+  }
+
+  .table_wrapper .bx-wrapper .bx-next {
+	  background: url(../images/btn-next.png) no-repeat;
+	  width: 105px;
+	  height: 72px;
+	  background-position: 0 0;
+	  position: relative;
+	  margin-top: 0;
+	  right: 0;
+  }
+
+  .table_wrapper .bx-wrapper .bx-next:hover,
+  .table_wrapper .bx-wrapper .bx-next:focus {
+	background-position: 0 0;
+  }
+
+  .table_wrapper .bx-wrapper .bx-prev {
+	background: url(../images/btn-prev.png) no-repeat;
+	width: 105px;
+	height: 72px;
+	background-position: 0 0;
+	position: relative;
+	margin-top: 0;
+	left: 0;
+}
 
   .table_head{
 	  position: relative;
@@ -1101,7 +1146,7 @@ body{
 		padding: 8px 15px;
 	}
 }
-@media screen and (max-width:579px) {
+@media screen and (max-width:767px) {
 	.banner{
 		height: 148px;
 		background-size:100% 100%;
@@ -1144,10 +1189,12 @@ body{
 		width: 20px;
 	}
 	.table_wrapper{
-		margin: 20px 0 0 0;
-	}
-	.table{
 		width: 98%;
+		margin: 20px auto 72px;
+	}
+	.table_body_wrapper {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.table_head{
 		font-size: 12px;		
@@ -1157,6 +1204,10 @@ body{
 	}
 	.btn img{
 		width: 40px;
+	}
+	.body_text:last-child,.heading:last-child {
+		flex: 500px;
+    	max-width: 500px;
 	}
 	.body_text{
 		height: 25px;
@@ -1174,7 +1225,11 @@ body{
 		border-width: 2px;
 	}
 
-
+	.table_wrapper .bx-wrapper .bx-next, .table_wrapper .bx-wrapper .bx-prev {
+		background-size: contain;
+		width: 80px;
+		height: 60px;
+	}
 
 	.transactionDetails {
 		flex-direction: column;

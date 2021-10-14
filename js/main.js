@@ -10,14 +10,26 @@ $(document).ready(function(){
 
 
 	$('.otpEntry .input-control').each(function(){
-		$(this).keypress(function(){
-			$(this).next().focus();
+		$(this).keyup(function(event){
+      var key = event.keyCode || event.charCode;
+      if( key == 8 || key == 46 ){
+			  $(this).prev().focus();
+      }
+      else {
+        $(this).next().focus();
+      }
 		});
 	});
-  
+
+  $('.summary_table').bxSlider({
+    mode: 'fade',
+    pager: false,
+    speed: 0
+  });
+
 
   $('.otpbtn').click(function(){
-    if($('#mobile').val().length === 10){
+    if($('#mobile').val().length === 10 && $('#accountNumber').val() != ""){
       $('.otpbox').show();
       $('.otp-input').show();
       $(this).hide();
