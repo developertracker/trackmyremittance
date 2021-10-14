@@ -24,7 +24,8 @@ $(document).ready(function(){
   $('.summary_table').bxSlider({
     mode: 'fade',
     pager: false,
-    speed: 0
+    speed: 0,
+    infiniteLoop: false
   });
 
 
