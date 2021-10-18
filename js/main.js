@@ -57,10 +57,12 @@ function validateForm(e) {
 
   if (isAccount == "") {
     alert("Please enter the Beneficiary Account Number where the funds will be credited to proceed.");
+    $('#accountNumber').focus();
     return false;
   }
   if (isMobile == "" || isMobile.length < 10) {
     alert("Please enter the Mobile Number registered with the Bank for the mentioned Beneficiary Account Number to proceed.");
+    $('#mobile').focus();
     return false;
   }
 }
