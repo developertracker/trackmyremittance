@@ -21,16 +21,20 @@ $(document).ready(function(){
 		});
 	});
 
-  $('.summary_table').bxSlider({
-    mode: 'fade',
-    pager: false,
-    speed: 0,
-    infiniteLoop: false
-  });
+  var summaryTable = $('.summary_table');
+  if(summaryTable.length) {
+    summaryTable.bxSlider({
+      mode: 'fade',
+      pager: false,
+      speed: 0,
+      infiniteLoop: false
+    });
+  }
 
 
   $('.otpbtn').click(function(){
     if($('#mobile').val().length === 10 && $('#accountNumber').val() != ""){
+      console.log('true');
       $('.otpbox').show();
       $('.otp-input').show();
       $(this).hide();
@@ -66,6 +70,7 @@ function validateOTP() {
   for(const props of isOtp) {
     if (props.value == "") {
       alert("Please enter the OTP sent on your Mobile Number to proceed.");
+      props.focus();
       return false;
     }
   }
