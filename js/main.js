@@ -8,7 +8,6 @@ $(document).ready(function(){
 	manageHeight();
 
 
-
 	$('.otpEntry .input-control').each(function(){
 		$(this).keyup(function(event){
       var key = event.keyCode || event.charCode;
@@ -27,10 +26,10 @@ $(document).ready(function(){
       mode: 'fade',
       pager: false,
       speed: 0,
-      infiniteLoop: false
+      infiniteLoop: false,
+      touchEnabled: false,
     });
   }
-
 
   $('.otpbtn').click(function(){
     if($('#mobile').val().length === 10 && $('#accountNumber').val() != ""){
